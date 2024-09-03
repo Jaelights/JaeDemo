@@ -12,10 +12,10 @@ APPLICANT TO COMPLETE:
 ~~3. Getting 200 response when an Invoice or BillingRecord are not found in the DB.
    UI team is letting us know that is not the expectation. Please fix that.~~
 
-4. Product wants the UI to be able to hit a GET endpoint (or endpoints) and get all or only get a subset of the User's Billing Records or Invoices.
+~~4. Product wants the UI to be able to hit a GET endpoint (or endpoints) and get all or only get a subset of the User's Billing Records or Invoices.~~
 
-Endpoints are:
-   - /user/{id}/invoices (all invoices)
-   - /user/{id}/billing_records (all billing records)
+### Endpoints are:
+   - /user/{id}/invoices (all invoices for ID)
+   - /user/{id}/billing_records (all billing records ID)
 
 5. Push all your changes to your own repo (not a branch on mine). Then email me a link to it at forrest.tracy@bestbuy.com
