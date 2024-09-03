@@ -51,6 +51,18 @@ public class InvoiceControllerSpec {
     }
 
     @Test
+    public void gettingNonExistentRecordThrows404() throws Exception {
+        UUID id = UUID.fromString("11111111-1111-1111-1111-111111119999");
+        when(invoiceRepo.getById(any())).thenReturn(null);
+
+        MvcResult result = mockMvc.perform(MockMvcRequestBuilders
+                        .get("/invoice/{id}", id))
+                .andReturn();
+
+        Assertions.assertEquals(404, result.getResponse().getStatus());
+    }
+
+    @Test
     public void removeDupesRemovesDupes() throws Exception {
         BillingRecord billingRecord1 = BillingRecord.builder().id(UUID.fromString("11111111-1111-1111-1111-111111111111")).build();
         BillingRecord billingRecord2 = BillingRecord.builder().id(UUID.fromString("11111111-1111-1111-1111-111111111112")).build();
