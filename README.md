@@ -18,4 +18,4 @@ APPLICANT TO COMPLETE:
    - /user/{id}/invoices (all invoices for ID)
    - /user/{id}/billing_records (all billing records ID)
 
-5. Push all your changes to your own repo (not a branch on mine). Then email me a link to it at forrest.tracy@bestbuy.com
+5. Push all your changes to your own repo (not a branch on mine). <redacted>
