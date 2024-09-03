@@ -144,4 +144,7 @@ public class FakeDB {
             br1, br2, br3, br4, br5, br6, br7, br8
     );
 
+    // So we can get the list of users
+    public static final List<User> allUsers = List.of(user1, user2);
+
 }

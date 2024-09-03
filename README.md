@@ -14,4 +14,8 @@ APPLICANT TO COMPLETE:
 
 4. Product wants the UI to be able to hit a GET endpoint (or endpoints) and get all or only get a subset of the User's Billing Records or Invoices.
 
+Endpoints are:
+   - /user/{id}/invoices (all invoices)
+   - /user/{id}/billing_records (all billing records)
+
 5. Push all your changes to your own repo (not a branch on mine). Then email me a link to it at forrest.tracy@bestbuy.com
